@@ -1,0 +1,24 @@
+.advantages-title {
+  color: $black-strong;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px
+}
+
+.advantages__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  color: $black-strong;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.advantages__item-description {
+  padding: 0;
+  margin: 0;
+}

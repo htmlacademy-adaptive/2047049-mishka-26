@@ -6,6 +6,7 @@
   <meta name="description" content="Мишка – магазин вязаных аксессуаров и игрушек">
   <meta name="keywords" content="Мишка, вязание, вязаные игрушки, вязаные аксессуары, предметы интерьера">
   <title>Интернет-магазин Мишка</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -20,43 +21,41 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="main-navigation__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-navigation__item">
-            <a href="knit-order-form.html">Вязание на заказ</a>
+            <a class="main-navigation__link" href="knit-order-form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-navigation__list user-list">
           <li class="main-navigation__item">
-            <a href="#">Поиск по сайту</a>
+            <a class="main-navigation__link" href="#">Поиск по сайту</a>
           </li>
           <li class="main-navigation__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="main-navigation__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <ul class="main-navigation__promo promo-menu">
-          <li class="promo-menu__item">
-            <a class="promo-menu__link" href="#">Новые поступления</a>
-          </li>
-          <li class="promo-menu__item">
-            <a class="promo-menu__link" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <span class="main-navigation__delivery">Бесплатная доставка по России</span>
       </div>
+      <ul class="main-navigation__list main-navigation__promo promo-menu">
+        <li class="promo-menu__item">
+          <a class="promo-menu__link" href="#">Новые поступления</a>
+        </li>
+        <li class="promo-menu__item">
+          <a class="promo-menu__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+      <span class="main-navigation__delivery">Бесплатная доставка по России</span>
     </nav>
   </header>
   <main class="page__content">
-    <section class="main-info">
-      <h1 class="heading heading--h1 page__heading main-info__heading">Милые штуки ручной работы для дома</h1>
-    </section>
-    <section class="features">
+    <section class="main-info features">
+      <h1 class="heading heading--h1 page__heading features__heading">Милые штуки ручной работы для дома</h1>
       <h2 class="visually-hidden">Наш магазин специализируется на продаже и изготовлении вязанных предметов интерьера и
         детских игрушек</h2>
       <ul class="features__list">
         <li class="features__item">
-          <a href="#">Предметы интерьера
-            <svg width="40" height="62" viewBox="0 0 40 62" fill="none">
+          <a class="features__link" href="#"><span class="features__link-text">Предметы<br> интерьера</span>
+            <svg class="features__link-icon" width="40" height="62" viewBox="0 0 40 62" fill="none">
               <g opacity="0.5">
                 <path
                   d="M15.162 37.7167C14.8627 38.7119 14.9625 39.9061 15.162 41.2994C15.6607 43.8869 16.8577 47.2705 17.556 50.9527H22.6433C23.3415 47.3701 24.5385 43.9864 25.137 41.2994C25.4363 39.9061 25.4363 38.6124 25.137 37.7167C24.8378 36.821 24.2393 36.1244 23.142 35.4277H17.157C15.96 36.1244 15.3615 36.821 15.162 37.7167Z"
@@ -78,8 +77,8 @@
           </a>
         </li>
         <li class="features__item">
-          <a href="#">Детские игрушки
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <a class="features__link" href="#"><span class="features__link-text">Детские <br> игрушки</span>
+            <svg class="features__link-icon" width="60" height="60" viewBox="0 0 60 60" fill="none">
               <path opacity="0.5"
                 d="M0 43.9933L27.4 60V36.5436L0 20.4362V43.9933ZM51.3 12.4832V15C51.3 16.8121 47.8 18.3221 43.6 18.3221C39.3 18.3221 35.9 16.8121 35.9 15V10.8725C36.2 12.5839 39.5 13.9933 43.6 13.9933C47.9 13.9933 51.3 12.4832 51.3 10.6711C51.3 8.85907 47.8 7.349 43.6 7.349C43.3 7.349 42.9 7.349 42.6 7.349L37.6 4.42954V7.55034C37.6 9.36242 34.1 10.8725 29.9 10.8725C27.2 10.8725 24.9 10.2685 23.5 9.36242C23.3 9.16108 23.1 8.95973 22.8 8.75839C22.4 8.3557 22.2 7.95302 22.2 7.55034V4.5302L17.4 7.349C17.1 7.349 16.7 7.349 16.3 7.349C12 7.349 8.60001 8.85907 8.60001 10.6711C8.60001 12.4832 12.1 13.9933 16.3 13.9933C20.4 13.9933 23.7 12.5839 24 10.8725V15C24 16.8121 20.5 18.3221 16.3 18.3221C12 18.3221 8.60001 16.8121 8.60001 15V12.5839L2.60001 16.1074L30.1 32.2148L57.5 16.2081L51.3 12.4832ZM37.7 22.7517C37.7 24.5638 34.2 26.0738 30 26.0738C25.7 26.0738 22.3 24.5638 22.3 22.7517V18.6242C22.6 20.3356 25.9 21.745 30 21.745C34.1 21.745 37.4 20.3356 37.7 18.6242V22.7517ZM32.6 36.745V60L60 43.9933V20.7383L32.6 36.745ZM29.9 6.6443C34.2 6.6443 37.6 5.13423 37.6 3.32215C37.6 1.51007 34.1 0 29.9 0C25.6 0 22.2 1.51007 22.2 3.32215C22.2 5.13423 25.6 6.6443 29.9 6.6443Z"
                 fill="#149080" />
@@ -89,33 +88,34 @@
       </ul>
     </section>
     <section class="offer">
-      <h2 class="heading heading--h2">Вязаные корзинки</h2>
+      <h2 class="heading offer__title heading--h2">Вязаные корзинки</h2>
       <span class="offer__subtitle">Товар недели</span>
-      <p>Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках и&nbsp;трёх размерах.</p>
+      <p class="offer__description">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках
+        и&nbsp;трёх размерах.</p>
       <table class="offer__table">
         <tbody>
           <tr>
-            <td>Цвет:</td>
-            <td>тиффани/серый</td>
+            <td class="offer__table-digit">Цвет:</td>
+            <td class="offer__table-digit">тиффани/серый</td>
           </tr>
           <tr>
-            <td>Диаметр:</td>
-            <td>25 см</td>
+            <td class="offer__table-digit">Диаметр:</td>
+            <td class="offer__table-digit">25 см</td>
           </tr>
           <tr>
-            <td>Высота:</td>
-            <td>15 см</td>
+            <td class="offer__table-digit">Высота:</td>
+            <td class="offer__table-digit">15 см</td>
           </tr>
         </tbody>
       </table>
       <img src="./img/knitted-basket.png" width="260" height="315" alt="">
-      <span>Цена: 990 руб.</span>
+      <span class="offer__price">Цена: 990 руб.</span>
       <button class="button button--primary" type="button">
         Заказать
       </button>
     </section>
     <section class="advantages">
-      <h2 class="heading heading--h2">Коротко о нас:</h2>
+      <h2 class="heading advantages-title heading--h2">Коротко о нас:</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
           <svg width="33" height="38" viewBox="0 0 33 38" fill="none">
@@ -123,7 +123,7 @@
               d="M16.5 38C25.575 38 33 30.6452 33 21.6559C23.925 21.6559 16.5 28.9086 16.5 38ZM4.74375 16.6505C4.74375 19.2043 6.80625 21.1452 9.28125 21.1452C10.2094 21.1452 11.1375 20.8387 11.8594 20.328V20.6344C11.8594 23.1882 13.9219 25.129 16.3969 25.129C18.975 25.129 20.9344 23.086 20.9344 20.6344V20.328C21.6562 20.8387 22.5844 21.1452 23.5125 21.1452C26.0906 21.1452 28.05 19.1021 28.05 16.6505C28.05 14.8118 27.0188 13.2796 25.4719 12.5645C27.0188 11.8495 28.05 10.3172 28.05 8.47849C28.05 5.92473 25.9875 3.98387 23.5125 3.98387C22.5844 3.98387 21.6562 4.29032 20.9344 4.80107V4.49462C20.9344 1.94086 18.8719 0 16.3969 0C13.8187 0 11.8594 2.04301 11.8594 4.49462V4.80107C11.1375 4.29032 10.2094 3.98387 9.28125 3.98387C6.70312 3.98387 4.74375 6.02688 4.74375 8.47849C4.74375 10.3172 5.775 11.8495 7.32188 12.5645C5.87813 13.2796 4.74375 14.8118 4.74375 16.6505ZM16.5 7.96774C19.0781 7.96774 21.0375 10.0108 21.0375 12.4624C21.0375 15.0161 18.975 16.957 16.5 16.957C13.9219 16.957 11.9625 14.914 11.9625 12.4624C11.9625 10.0108 13.9219 7.96774 16.5 7.96774ZM0 21.6559C0 30.6452 7.425 38 16.5 38C16.5 28.9086 9.075 21.6559 0 21.6559Z"
               fill="#63D1BB" />
           </svg>
-          <p>Экологически чистые материалы</p>
+          <p class="advantages__item-description">Экологически чистые материалы</p>
         </li>
         <li class="advantages__item">
           <svg width="47" height="27" viewBox="0 0 47 27" fill="none">
@@ -134,7 +134,7 @@
               d="M6.95925 20.8683H39.6374V6.62659H6.95925V20.8683ZM23.5 8.50571C26.4249 8.50571 28.8455 10.8793 28.8455 13.7475C28.8455 16.6156 26.4249 18.9892 23.5 18.9892C20.5751 18.9892 18.1545 16.6156 18.1545 13.7475C18.1545 10.7804 20.5751 8.50571 23.5 8.50571Z"
               fill="#63D1BB" />
           </svg>
-          <p>Скандинавский стиль по российской цене</p>
+          <p class="advantages__item-description">Скандинавский стиль по российской цене</p>
         </li>
         <li class="advantages__item">
           <svg width="34" height="27" viewBox="0 0 34 27" fill="none">
@@ -142,7 +142,7 @@
               d="M34 8.44964C34 3.78777 29.9818 0 25.0364 0C21.5333 0 18.5455 1.94245 17 4.66187C15.5576 1.94245 12.4667 0 8.96364 0C4.01818 0 0 3.78777 0 8.44964C0 17.2878 15.1455 27 17 27C18.9576 27 34 17.3849 34 8.44964Z"
               fill="#63D1BB" />
           </svg>
-          <p>Увеличивает лайки на фотографиях</p>
+          <p class="advantages__item-description">Увеличивает лайки на фотографиях</p>
         </li>
         <li class="advantages__item">
           <svg width="35" height="34" viewBox="0 0 35 34" fill="none">
@@ -183,7 +183,7 @@
               d="M32.8984 8.90674L5.70373 29.4844C6.21299 29.9791 6.82411 30.4738 7.43522 30.8695L33.9169 10.8854C33.6114 10.1928 33.3058 9.50033 32.8984 8.90674Z"
               fill="#63D1BB" />
           </svg>
-          <p>Связано вручную с любовью и умилением</p>
+          <p class="advantages__item-description">Связано вручную с любовью и умилением</p>
         </li>
         <li class="advantages__item">
           <svg width="55" height="23" viewBox="0 0 55 23" fill="none">
@@ -194,7 +194,7 @@
               d="M44.4853 6.74121C43.1709 8.32742 42.4632 9.91361 42.4632 11.4998C42.4632 13.086 43.1709 14.6722 44.4853 16.2585C50.9559 14.0774 55 11.4998 55 11.4998C55 11.4998 50.9559 8.92224 44.4853 6.74121Z"
               fill="#63D1BB" />
           </svg>
-          <p>Поддержка отечественного производителя</p>
+          <p class="advantages__item-description">Поддержка отечественного производителя</p>
         </li>
         <li class="advantages__item">
           <svg width="33" height="32" viewBox="0 0 33 32" fill="none">
@@ -202,19 +202,20 @@
               d="M3.02752 32H15.6422V18.2716H3.02752V32ZM31.3853 8.69136H24.0183C24.5229 8.39506 25.0275 8.19753 25.4312 7.90123C27.0459 6.81481 27.8532 5.33333 27.8532 3.95062C27.8532 2.76543 27.2477 1.77777 26.4404 1.08641C25.633 0.395053 24.5229 0 23.4128 0C22.2018 0 20.9908 0.395053 20.0826 1.08641C18.5688 2.07406 17.4587 3.55555 16.6514 5.1358C16.6514 5.23456 16.5505 5.33333 16.5505 5.33333C16.2477 4.74073 15.945 4.14814 15.5413 3.55555C14.8349 2.56789 14.0275 1.679 13.0183 1.08641C12.0092 0.493818 10.8991 0 9.68807 0C8.47706 0 7.36697 0.49383 6.45871 1.28395C5.65137 2.07408 5.04587 3.16049 5.04587 4.34567C5.04587 5.03703 5.2477 5.82715 5.65137 6.51851C6.25687 7.4074 7.06422 8.09877 8.27523 8.69136H1.61467C0.706413 8.69136 0 9.38271 0 10.2716V16.0988H15.5413V8.69136H17.4587V16.0988H33V10.2716C33 9.38271 32.2936 8.69136 31.3853 8.69136ZM8.88073 6.41975C8.27522 6.02469 7.87155 5.62962 7.66972 5.33333C7.46788 4.93826 7.36696 4.64197 7.36696 4.34567C7.36696 3.85184 7.56881 3.35802 8.0734 2.86419C8.47707 2.46913 9.08256 2.17284 9.68807 2.17284C10.3945 2.17284 11.1009 2.37036 11.7064 2.86419C12.7156 3.55555 13.7248 4.64196 14.3303 6.02468C14.633 6.71604 14.9358 7.4074 15.1376 8.09876C12.0092 7.80246 9.99082 7.11111 8.88073 6.41975ZM19.4771 4.8395C20.0826 4.04938 20.6881 3.35802 21.3945 2.96296C22.1009 2.46914 22.8073 2.27161 23.4128 2.27161C24.0183 2.27161 24.5229 2.46914 24.9266 2.76543C25.3303 3.06173 25.5321 3.45679 25.5321 3.95062C25.5321 4.44444 25.2294 5.23456 24.0183 6.02468C22.9083 6.8148 20.8899 7.7037 17.8624 8.29629C18.1651 7.1111 18.7706 5.82715 19.4771 4.8395ZM17.4587 32H30.0734V18.2716H17.4587V32Z"
               fill="#63D1BB" />
           </svg>
-          <p>Поставляется в подарочной упаковке</p>
+          <p class="advantages__item-description">Поставляется в подарочной упаковке</p>
         </li>
       </ul>
     </section>
-    <section class="feedbacks">
-      <h2 class="heading heading--h2">Отзывы</h2>
+    <section class="feedback">
+      <h2 class="heading feedback-title heading--h2">Отзывы</h2>
       <article class="feedback">
         <h2 class="visually-hidden">Отзыв.</h2>
-        <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+        <p class="feedback-description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+          лайков, как у популярных
           инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
           стильными, а также набирают больше лайков!</p>
-        <span>Анастасия Красильникова</span>
-        <span>@misssssiskras</span>
+        <span class="feedback-author">Анастасия Красильникова</span>
+        <span class="feedback-email">@misssssiskras</span>
       </article>
       <button class="button button--slider" type="button">
         <svg width="50" height="26" viewBox="0 0 50 26" fill="none">
@@ -231,16 +232,19 @@
       </button>
     </section>
     <section class="contacts">
-      <h2 class="heading heading--h2">Контакты</h2>
+      <h2 class="heading contacts-title heading--h2">Контакты</h2>
       <table class="contacts__table">
         <tbody>
           <tr>
-            <td>e-mail:</td>
-            <td>info@mimimishkashop.ru</td>
+            <td class="contract__table-digit">e-mail:</td>
+            <td class="contract__table-digit">
+              <a href="mailto:info@mimimishkashop.ru" class="contract__table-digit--email">info@mimimishkashop.ru</a>
+            </td>
           </tr>
           <tr>
-            <td>адрес:</td>
-            <td>г.&nbsp;Санкт-Петербург ул.&nbsp;Большая&nbsp;Конюшенная д.&nbsp;19/8,&nbsp;офис 101</td>
+            <td class="contract__table-digit">адрес:</td>
+            <td class="contract__table-digit">г.&nbsp;Санкт-Петербург ул.&nbsp;Большая&nbsp;Конюшенная
+              д.&nbsp;19/8,&nbsp;офис 101</td>
           </tr>
         </tbody>
       </table>
