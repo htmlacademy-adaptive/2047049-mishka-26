@@ -2,6 +2,8 @@
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/normalize.scss";
+@import "./global/heading.scss";
+@import "./blocks/buttons.scss";
 
 // index.html
 @import "./blocks/page.scss";
@@ -13,7 +15,6 @@
 @import "./blocks/features.scss";
 @import "./blocks/feature-list.scss";
 @import "./blocks/offer.scss";
-@import "./blocks/buttons.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/feedback.scss";
 @import "./blocks/contacts.scss";

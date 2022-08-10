@@ -1,4 +1,4 @@
-.button--primary {
+.button {
   color: $black-light;
   background-color: $white;
   border: 2px solid $black-light;
@@ -6,13 +6,19 @@
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 16px 60px;
+  padding: 16px;
   cursor: pointer;
 }
 
+.button--primary {
+  width: 260px;
+}
+
+.button--make-order {
+  width: 192px;
+}
+
 .button--slider {
-  background: $white;
   border: 1px solid $gray;
   padding: 13px 42px 13px;
-  cursor: pointer;
 }
