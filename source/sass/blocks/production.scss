@@ -1,0 +1,22 @@
+.production {
+  border: 1px solid $gray;
+}
+
+.production__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.production__video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.production__descpition {
+  color: $black-light;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
