@@ -1,0 +1,29 @@
+.features__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  background-color: $emerald;
+}
+
+.features__item:last-child {
+  background-color: $emerald-dark;
+}
+
+.features__link {
+  display: flex;
+  padding-left: 30px;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  justify-content: space-between;
+}
+
+.features__link-text {
+  color: $white;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  align-self: center;
+}

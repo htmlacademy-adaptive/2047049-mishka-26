@@ -1,0 +1,16 @@
+.main-navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation__item {
+  padding: 28px 0;
+  padding-left: 76px;
+  box-shadow: 0 1px 0 $gray, inset 0 1px 0 $gray;
+}
+
+.main-navigation__link {
+  color: $black-strong;
+  font-size: 17px;
+}

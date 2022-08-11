@@ -1,0 +1,14 @@
+.main-navigation {
+  line-height: 24px;
+  font-weight: 700;
+  color: $black-strong;
+}
+
+.main-navigation__delivery {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $black-light;
+  display: none;
+}

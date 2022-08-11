@@ -1,0 +1,34 @@
+// .offer__title {
+
+// }
+
+.offer__subtitle {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $emerald;
+  text-transform: uppercase;
+}
+
+.offer__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $black-light;
+}
+
+.offer__table {
+  font-size: 15px;
+  line-height: 20px;
+  color: $black-light;
+}
+
+.offer__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black-light;
+}
+
+.offer__table-digit {
+  border-bottom: 1px solid $gray;
+}
