@@ -1,3 +1,36 @@
-// .main__title {
+.features {
+  height: 500px;
+  background: url("../../img/features-underlay(m).png");
+  background-position-y: -20px;
 
-// }
+  @media (min-width: $tablet-width) {
+    height: 760px;
+    background: url("../../img/features-underlay(t).png") center no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/features-underlay(d).png") center no-repeat;
+  }
+}
+
+.main__title {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px;
+  margin-bottom: 120px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 150px;
+    margin-bottom: 390px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    padding-top: 150px;
+    margin-bottom: 370px;
+  }
+}

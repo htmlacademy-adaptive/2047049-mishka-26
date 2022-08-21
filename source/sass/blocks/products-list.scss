@@ -3,8 +3,35 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .products__item {
   border: 1px solid $gray;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 335px 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    height: 660px;
+  }
+}
+
+.products__item:not(:nth-child(3n)) {
+  @media (min-width: $desktop-width) {
+   margin-right: 52px;
+  }
 }

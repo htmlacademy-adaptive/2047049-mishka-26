@@ -2,6 +2,10 @@
   background: url("../../img/map.png");
   height: 455px;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
 }
 
 .contacts__map-pin {

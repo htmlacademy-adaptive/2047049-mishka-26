@@ -1,3 +1,26 @@
 .promo-menu {
   display: none;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.promo-menu__item {
+  padding-right: 30px;
+}
+
+.promo-menu__link {
+  color: $black-strong;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 24px;
 }
