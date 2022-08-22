@@ -1,11 +1,14 @@
 .user-list {
   order: 1;
-  display: none;
-  position: absolute;
   top: 300%;
   background-color: $white;
   z-index: 1;
   width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -23,7 +26,7 @@
 }
 
 .navigation__link--search-link {
-  background: url("../../img/icons/search-icon.svg") no-repeat;
+  background: url("../img/icons/search-icon.svg") no-repeat;
   background-position: 32px;
 
   @media (min-width: $tablet-width) {
@@ -42,6 +45,6 @@
 }
 
 .navigation__link--cart-link {
-  background: url("../../img/icons/cart-icon.svg") no-repeat;
+  background: url("../img/icons/cart-icon.svg") no-repeat;
   background-position: 30px;
 }

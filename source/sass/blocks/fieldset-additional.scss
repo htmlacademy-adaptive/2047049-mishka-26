@@ -1,7 +1,13 @@
 .fieldset__additional {
   padding: 0;
   margin: 0;
-  margin-bottom: 17px;
+
+
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;

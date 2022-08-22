@@ -1,11 +1,13 @@
 .site-list {
-
-  display: none;
-  position: absolute;
   top: 100%;
   background-color: $white;
   z-index: 1;
   width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -14,6 +16,7 @@
     order: 2;
     width: 370px;
     position: static;
+    border-top: 1px solid rgba($color: $black-strong, $alpha: 0.1);
   }
 
   @media (min-width: $desktop-width) {
@@ -32,5 +35,11 @@
   @media (min-width: $desktop-width) {
     font-size: 17px;
     padding: 15px;
+  }
+}
+
+.site-list__item--catalog {
+  @media (min-width: $desktop-width) {
+    border-right: 1px solid rgba($color: $black-strong, $alpha: 0.1);
   }
 }

@@ -1,15 +1,46 @@
 .features {
   height: 500px;
-  background: url("../../img/features-underlay(m).png");
+  background: url("../img/features-underlay(m).png") no-repeat center;
   background-position-y: -20px;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 767px;
+    position: relative;
+  }
 
   @media (min-width: $tablet-width) {
     height: 760px;
-    background: url("../../img/features-underlay(t).png") center no-repeat;
+    background: url("../img/features-underlay(t).png") center no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../img/features-underlay(d).png") center no-repeat;
+    background: url("../img/features-underlay(d).png") center no-repeat;
+  }
+}
+
+.features::before,
+.features::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    height: 280px;
+    width: 70vw;
+    background-color: #f9f9f9;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.features::before {
+  @media (max-width: $mobile-width-only) {
+    right: 0;
+  }
+}
+
+.features::after {
+  @media (max-width: $mobile-width-only) {
+    left: 0;
   }
 }
 

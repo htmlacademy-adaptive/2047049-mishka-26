@@ -12,7 +12,7 @@
 }
 
 .button--primary {
-  width: 260px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: inherit;
@@ -21,7 +21,7 @@
 }
 
 .button--make-order {
-  width: 192px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: inherit;

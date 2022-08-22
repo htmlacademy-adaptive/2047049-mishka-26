@@ -97,11 +97,11 @@
 .order::after,
 .order::before {
   @media (min-width: $tablet-width) {
-   content: "";
-   height: 100%;
-   width: 50px;
-   background-color: $gray-light;
-   position: absolute;
+    content: "";
+    height: 100%;
+    width: 50px;
+    background-color: $gray-light;
+    position: absolute;
   }
 }
 

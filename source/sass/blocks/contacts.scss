@@ -1,3 +1,10 @@
+.contacts {
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
 .contacts-title {
   padding-left: 30px;
 

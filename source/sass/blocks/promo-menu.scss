@@ -10,10 +10,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 480px;
   }
 }
 
 .promo-menu__item {
+  padding: 12px 0;
   padding-right: 30px;
 }
 

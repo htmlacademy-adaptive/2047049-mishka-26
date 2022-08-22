@@ -32,6 +32,6 @@
 
 .products__item:not(:nth-child(3n)) {
   @media (min-width: $desktop-width) {
-   margin-right: 52px;
+    margin-right: 52px;
   }
 }
