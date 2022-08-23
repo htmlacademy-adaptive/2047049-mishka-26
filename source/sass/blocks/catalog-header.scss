@@ -1,0 +1,27 @@
+.catalog__header {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.catalog__header::after,
+.catalog__header::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    height: 100%;
+    width: 50px;
+    background-color: $gray-light;
+    position: absolute;
+  }
+}
+
+.catalog__header::after {
+  @media (min-width: $tablet-width) {
+    right: -50px;
+    top: 0;
+  }
+}
+
+.catalog__header::before {
+  left: -50px;
+  top: 0;
+}

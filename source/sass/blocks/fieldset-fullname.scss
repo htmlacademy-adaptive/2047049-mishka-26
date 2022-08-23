@@ -1,7 +1,71 @@
 .fieldset__fullname {
-  border-top: 1px solid $emerald;
   padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 200px 450px;
+    padding: 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 200px 700px;
+  }
+}
+
+.legend__fullname {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    position: absolute;
+  }
+}
+
+.legend__fullname::after {
+  content: "";
+  height: 1px;
+  width: 405%;
+  position: absolute;
+  top: 50%;
+  left: 155%;
+  background-color: $emerald;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.fieldset__fullname-label {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    grid-column: 2 / 3;
+  }
+}
+
+.form-input--text-field {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.fieldset__fullname-label:not(:last-child) {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }

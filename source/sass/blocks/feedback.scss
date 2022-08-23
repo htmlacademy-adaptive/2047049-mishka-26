@@ -1,6 +1,17 @@
-// .feedback-title {
+.feedback {
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    margin: 0 auto;
+  }
 
-// }
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.feedback-title {
+  padding-left: 30px;
+}
 
 .response__description {
   color: $black-light;
@@ -8,6 +19,19 @@
   margin: 0;
   font-size: 15px;
   line-height: 30px;
+  padding: 12px 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.response__wrapper {
+  padding: 30px;
 }
 
 .response__author {
@@ -21,4 +45,37 @@
   color: $black-light;
   font-size: 17px;
   line-height: 24px;
+}
+
+.feedback__slider-butttons-positioner {
+  display: flex;
+  padding: 12px 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+    padding: 0;
+  }
+}
+
+.feedback__button-positioner {
+  padding: 12px 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+    padding: 0;
+  }
+}
+
+.feedback__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+    position: absolute;
+    height: 95%;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+  }
 }

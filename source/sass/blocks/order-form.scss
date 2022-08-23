@@ -1,8 +1,21 @@
+.order-form {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .order-form__description {
   color: $black-light;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .order-form__fieldset {
@@ -19,6 +32,7 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .form-input {
@@ -32,4 +46,72 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.form-label__text {
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
+
+.form-input[placeholder] {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: 'Open Sans';
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
+
+.odrer-form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 175px;
+  }
+}
+
+.order-form__button-positioner {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}
+
+.order {
+  position: relative;
+}
+
+.order::after,
+.order::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    height: 100%;
+    width: 50px;
+    background-color: $gray-light;
+    position: absolute;
+  }
+}
+
+.order::after {
+  @media (min-width: $tablet-width) {
+    right: -50px;
+    top: 0;
+  }
+}
+
+.order::before {
+  left: -50px;
 }

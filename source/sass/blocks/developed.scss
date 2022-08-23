@@ -1,8 +1,15 @@
 .developed {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 185px;
   gap: 27px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    padding-top: 29px;
+    border-top: 1px solid #e5e5e5;
+  }
 }
 
 .developed-title {

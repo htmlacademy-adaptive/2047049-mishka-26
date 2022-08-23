@@ -1,7 +1,128 @@
 .fieldset__color {
-  border-top: 1px solid $emerald;
   padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 100px 300px 300px;
+    row-gap: 24px;
+    background-color: $gray-light;
+    padding: 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 200px 300px 300px 300px;
+  }
+}
+
+.fieldset__color::after,
+.fieldset__color::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    height: 100%;
+    width: 50px;
+    background-color: $gray-light;
+    position: absolute;
+  }
+}
+
+.fieldset__color::after {
+  @media (min-width: $tablet-width) {
+    right: -20px;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.fieldset__color::before {
+  left: -50px;
+}
+
+
+.fieldset__color-label {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.fieldset__color-label:nth-child(even) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+  }
+}
+
+.fieldset__color-label:nth-child(odd) {
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+  }
+}
+
+.fieldset__color-label:nth-child(3n+1) {
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+  }
+}
+
+.fieldset__color-label:nth-child(3n+2) {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.fieldset__color-label:nth-child(3n+3) {
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+  }
+}
+
+.fieldset__color-label:not(:last-child) {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.legend__color {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    position: absolute;
+    padding-top: 68px;
+  }
+}
+
+.legend__color::after {
+  content: "";
+  height: 1px;
+  width: 390%;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  background-color: $emerald;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
