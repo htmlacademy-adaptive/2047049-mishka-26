@@ -1,4 +1,6 @@
+.site-list--closed,
 .site-list {
+  position: absolute;
   top: 100%;
   background-color: $white;
   z-index: 1;
@@ -6,23 +8,31 @@
 
   @media (max-width: $mobile-width-only) {
     display: grid;
-    grid-template-columns: 1fr 320px 1fr;
+    grid-template-columns: 1fr 100% 1fr;
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
     display: flex;
     flex-wrap: wrap;
     order: 2;
     width: 370px;
     position: static;
     border-top: 1px solid rgba($color: $black-strong, $alpha: 0.1);
+    background-color: #f9f9f9;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     order: 1;
+    border-left: 1px solid rgba($color: $black-strong, $alpha: 0.1);
+    background-color: $white;
+  }
+}
+
+.site-list--closed {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
