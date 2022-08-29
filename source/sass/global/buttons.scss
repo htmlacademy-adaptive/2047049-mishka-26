@@ -17,6 +17,15 @@
   @media (min-width: $tablet-width) {
     width: inherit;
     font-size: 17px;
+
+    &:hover {
+      background-color: $black-light;
+      color: $white;
+    }
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
   }
 }
 
@@ -26,6 +35,15 @@
   @media (min-width: $tablet-width) {
     width: inherit;
     font-size: 17px;
+  }
+
+  &:hover {
+    background-color: $black-light;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
   }
 }
 
@@ -37,5 +55,21 @@
     width: inherit;
     border: none;
     padding: 10px;
+  }
+
+  svg {
+    fill: $black-strong
+  }
+
+  &:hover {
+    svg {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
   }
 }
