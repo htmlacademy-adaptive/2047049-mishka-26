@@ -13,12 +13,14 @@
   @media (min-width: $tablet-width) {
     height: 760px;
     background: url("../img/features-underlay(t).png") center no-repeat;
-    margin-top: -48px;
+    margin-top: -86px;
     margin-bottom: 52px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../img/features-underlay(d).png") center no-repeat;
+    margin-top: -45px;
     margin-bottom: 70px;
   }
 }
@@ -38,15 +40,11 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    height: 790px;
-    width: 120vw;
+    height: 99%;
+    width: 95vw;
     background-color: #f9f9f9;
-    top: 86px;
+    top: 4px;
     z-index: -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 749px;
   }
 }
 
