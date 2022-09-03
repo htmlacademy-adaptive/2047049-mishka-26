@@ -58,4 +58,11 @@
   border: 2px solid $black-light;
   box-shadow: none;
   padding: 17px;
+
+  &:focus-visible,
+  &:hover {
+    border: 2px solid #62d1ba;
+    outline: none;
+    box-shadow: none;
+  }
 }

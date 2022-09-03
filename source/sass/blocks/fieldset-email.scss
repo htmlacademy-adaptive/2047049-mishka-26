@@ -27,9 +27,10 @@
   @media (min-width: $tablet-width) {
     content: "";
     height: 100%;
-    width: 50px;
+    width: 100vw;
     background-color: $gray-light;
     position: absolute;
+    z-index: -1;
   }
 }
 
@@ -86,5 +87,19 @@
 
   @media (min-width: $desktop-width) {
     background-position: 660px 15px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    background: url("../img/icons/mail-hover.svg") no-repeat;
+    background-position: 220px 15px;
+
+    @media (min-width: $tablet-width) {
+      background-position: 410px 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 660px 15px;
+    }
   }
 }

@@ -53,6 +53,15 @@
   font-size: 14px;
   line-height: 30px;
   border-bottom: 1px solid $emerald;
+
+  &:hover {
+    color: #46c1ae;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &:active {
+    border-bottom: 1px solid rgba(70, 193, 174, 0.1);
+  }
 }
 
 .contacts__button-positioner {

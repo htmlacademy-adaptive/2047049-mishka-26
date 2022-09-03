@@ -46,6 +46,7 @@
           <a class="main-navigation__link site-list__link" href="#"><span>Вязание на заказ</span></a>
         </li>
       </ul>
+      <div class="main-navigation__divider"></div>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list main-navigation__promo promo-menu">
           <li class="promo-menu__item">
@@ -73,7 +74,9 @@
         <fieldset class="order-form__fieldset fieldset__type" name="type">
           <legend class="order-form__legend legend__type">Тип</legend>
           <label class="fieldset__type-label">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+            <input class="form-input form-input--radio visually-hidden" type="radio" name="type" value="accessory"
+              checked>
+            <svg class="radio-icon" width="52" height="52" viewBox="0 0 52 52" fill="none">
               <path
                 d="M25.8884 2.87372C39.1193 2.87372 49.8137 13.3997 49.8137 26.346C49.8137 39.2919 39.1193 49.8182 25.8884 49.8182C12.6574 49.8182 1.96299 39.2919 1.96299 26.346C1.96299 13.3997 12.6574 2.87372 25.8884 2.87372Z"
                 stroke="#444444" stroke-width="2"></path>
@@ -81,67 +84,81 @@
                 d="M26.2395 16.3934C31.664 16.3934 36.0614 20.7903 36.0614 26.2148C36.0614 31.6392 31.664 36.0366 26.2395 36.0366C20.8151 36.0366 16.4177 31.6392 16.4177 26.2148C16.4177 20.7903 20.8151 16.3934 26.2395 16.3934Z"
                 fill="#62D1BA"></path>
             </svg>
-            <input class="form-input form-input--radio visually-hidden" type="radio" name="type" value="accessory">
             <span class="form-label__text">Аксессуар для<br> интерьера</span>
           </label>
           <label class="fieldset__type-label">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+            <input class="form-input form-input--radio visually-hidden" type="radio" name="type" value="toy">
+            <svg class="radio-icon" width="52" height="52" viewBox="0 0 52 52" fill="none">
               <path
                 d="M25.8884 2.87372C39.1193 2.87372 49.8137 13.3997 49.8137 26.346C49.8137 39.2919 39.1193 49.8182 25.8884 49.8182C12.6574 49.8182 1.96299 39.2919 1.96299 26.346C1.96299 13.3997 12.6574 2.87372 25.8884 2.87372Z"
                 stroke="#444444" stroke-width="2"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M26.2395 16.3934C31.664 16.3934 36.0614 20.7903 36.0614 26.2148C36.0614 31.6392 31.664 36.0366 26.2395 36.0366C20.8151 36.0366 16.4177 31.6392 16.4177 26.2148C16.4177 20.7903 20.8151 16.3934 26.2395 16.3934Z"
+                fill="#62D1BA"></path>
             </svg>
-            <input class="form-input form-input--radio visually-hidden" type="radio" name="type" value="toy">
             <span class="form-label__text">Детская игрушка</span>
           </label>
         </fieldset>
         <fieldset class="order-form__fieldset fieldset__color" name="color">
           <legend class="order-form__legend legend__color">Цвет</legend>
           <label class="fieldset__color-label">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+            <input class="form-input form-input--checkbox visually-hidden" type="checkbox" name="color" value="white" checked>
+            <svg class="checkbox-icon" width="52" height="52" viewBox="0 0 52 52" fill="none">
               <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
               <path
                 d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z"
                 fill="black"></path>
             </svg>
-            <input class="form-input form-input--checkbox visually-hidden" type="checkbox" name="color" value="white">
             <span class="form-label__text">Белый</span>
           </label>
           <label class="fieldset__color-label">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+            <input class="form-input form-input--checkbox visually-hidden" type="checkbox" name="color" value="grey" checked>
+            <svg class="checkbox-icon" width="52" height="52" viewBox="0 0 52 52" fill="none">
               <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
               <path
                 d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z"
                 fill="black"></path>
             </svg>
-            <input class="form-input form-input--checkbox visually-hidden" type="checkbox" name="color" value="grey">
             <span class="form-label__text">Серый</span>
           </label>
           <label class="fieldset__color-label">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
-            </svg>
             <input class="form-input form-input--checkbox visually-hidden" type="checkbox" name="color" value="tiffany">
+            <svg class="checkbox-icon" width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
+              <path
+                d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z"
+                fill="black"></path>
+            </svg>
             <span class="form-label__text">Тиффани</span>
           </label>
           <label class="fieldset__color-label">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
-            </svg>
             <input class="form-input form-input--checkbox visually-hidden" type="checkbox" name="color" value="black">
+            <svg class="checkbox-icon" width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
+              <path
+                d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z"
+                fill="black"></path>
+            </svg>
             <span class="form-label__text">Черный</span>
           </label>
           <label class="fieldset__color-label">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
-            </svg>
             <input class="form-input form-input--checkbox visually-hidden" type="checkbox" name="color" value="pink">
+            <svg class="checkbox-icon" width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
+              <path
+                d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z"
+                fill="black"></path>
+            </svg>
             <span class="form-label__text">Розовый</span>
           </label>
           <label class="fieldset__color-label">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
-            </svg>
             <input class="form-input form-input--checkbox visually-hidden" type="checkbox" name="color" value="orange">
+            <svg class="checkbox-icon" width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="1" y="1" width="50" height="50" stroke="#444444" stroke-width="2"></rect>
+              <path
+                d="M42.3704 17.3568L41.0098 16L21.5739 35.2863L11.9531 25.6916L10.5926 27.0485L20.2134 36.6432L21.5739 38L23.0316 36.6432L42.3704 17.3568Z"
+                fill="black"></path>
+            </svg>
             <span class="form-label__text">Оранжевый</span>
           </label>
         </fieldset>

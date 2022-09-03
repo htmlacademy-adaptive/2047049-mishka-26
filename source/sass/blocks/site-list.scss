@@ -17,7 +17,6 @@
     order: 2;
     width: 370px;
     position: static;
-    border-top: 1px solid rgba($color: $black-strong, $alpha: 0.1);
     background-color: transparent;
   }
 
@@ -25,7 +24,6 @@
     display: flex;
     flex-wrap: wrap;
     order: 1;
-    border-left: 1px solid rgba($color: $black-strong, $alpha: 0.1);
     background-color: $white;
   }
 }
