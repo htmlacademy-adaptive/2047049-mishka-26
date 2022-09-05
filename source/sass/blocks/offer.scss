@@ -1,4 +1,6 @@
 .offer {
+  position: relative;
+
   @media (max-width: $mobile-width-only) {
     width: 320px;
     margin: 0 auto;
@@ -62,11 +64,13 @@
     grid-template-rows: 90px 100px 110px;
     column-gap: 42px;
     row-gap: 40px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
     grid-template-rows: 150px 90px 100px 110px;
+    margin-bottom: 73px;
   }
 }
 
@@ -155,10 +159,30 @@
 .offer__button-positioner {
   padding: 12px 0;
 
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 36px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 292px;
     padding: 0;
     margin: 0 auto;
     grid-column: 1 / 2;
+  }
+}
+
+.offer__edging {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: -50vw;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: -50vw;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
   }
 }

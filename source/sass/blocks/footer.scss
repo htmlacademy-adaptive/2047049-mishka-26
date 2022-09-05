@@ -9,8 +9,31 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
   }
 }
+
+.footer::before,
+.footer::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    height: 99%;
+    width: 95vw;
+    background-color: $gray-light;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.footer::before {
+  right: 0;
+}
+
+.footer::after {
+  left: 0;
+}
+
 
 .footer__logo {
   display: none;

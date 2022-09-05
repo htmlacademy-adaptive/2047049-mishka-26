@@ -1,37 +1,81 @@
 .feedback {
+  position: relative;
+
   @media (max-width: $mobile-width-only) {
     width: 320px;
     margin: 0 auto;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $tablet-width) {
     position: relative;
+    margin-bottom: 100px;
+    height: 457px;
   }
 }
 
 .feedback-title {
   padding-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 82.5px;
+    padding-bottom: 38.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    padding-top: 79px;
+    padding-bottom: 35px;
+  }
+}
+
+.response {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 130px;
+  }
 }
 
 .response__description {
   color: $black-light;
-  padding: 0;
   margin: 0;
   font-size: 15px;
   line-height: 30px;
   padding: 12px 30px;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    width: 600px;
+    padding: 0;
+    padding-bottom: 61px;
 
     br {
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    padding-bottom: 44px;
+    width: 890px;
+  }
 }
 
 .response__wrapper {
   padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
 }
 
 .response__author {
@@ -39,6 +83,10 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .response__email {
@@ -70,12 +118,54 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 45px;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: column-reverse;
     position: absolute;
-    height: 95%;
+    height: 100%;
     justify-content: space-between;
     top: 0;
     right: 0;
+
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+  }
+}
+
+.feedback__edging {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: -50vw;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: -50vw;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.feedback__underlay-container {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    background: url("../img/feedback-underlay.jpg") no-repeat;
+    height: 100%;
+    width: 350px;
+    left: -50px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 0;
   }
 }

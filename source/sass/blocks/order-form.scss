@@ -12,6 +12,11 @@
   font-size: 13px;
   line-height: 24px;
 
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
@@ -36,9 +41,24 @@
 }
 
 .form-input {
+  color: $black-light;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   border: none;
   box-shadow: inset 0 -2px 0 $black-strong;
   height: 52px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    padding-left: 17px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+    outline: none;
+  }
 }
 
 .order-form__notification {
@@ -47,6 +67,10 @@
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -60,11 +84,12 @@
   }
 }
 
-.form-input[placeholder] {
+.form-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
-  font-family: 'Open Sans';
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -85,6 +110,11 @@
 }
 
 .order-form__button-positioner {
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width) {
     width: 230px;
   }
@@ -92,6 +122,14 @@
 
 .order {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -40px;
+  }
 }
 
 .order::after,
@@ -99,9 +137,10 @@
   @media (min-width: $tablet-width) {
     content: "";
     height: 100%;
-    width: 50px;
+    width: 100vw;
     background-color: $gray-light;
     position: absolute;
+    z-index: -1;
   }
 }
 
