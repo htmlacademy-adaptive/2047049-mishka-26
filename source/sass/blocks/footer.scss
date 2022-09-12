@@ -41,6 +41,16 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  svg {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
 }
 
 .footer__social {

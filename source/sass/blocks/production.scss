@@ -19,6 +19,14 @@
     display: grid;
     grid-template-columns: 680px 367px;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__title {
@@ -71,6 +79,11 @@
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     margin: 0;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
   }
 }
 

@@ -16,3 +16,15 @@
   font-size: 19px;
   line-height: 18px;
 }
+
+.developed__link {
+  svg {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+}
