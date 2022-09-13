@@ -19,11 +19,20 @@
 
   @media (min-width: $tablet-width) {
     width: 370px;
+    padding: 18px 40px;
   }
 
   @media (min-width: $desktop-width) {
     order: 2;
-    padding: 26px 140px;
+    padding: 10px 110px;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }
 

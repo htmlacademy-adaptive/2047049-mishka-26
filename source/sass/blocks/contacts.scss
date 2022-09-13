@@ -71,6 +71,7 @@
   @media (min-width: $tablet-width) {
     width: 175px;
     margin: 0 auto;
+    transform: translateY(510px);
   }
 
   @media (min-width: $desktop-width) {
@@ -78,14 +79,22 @@
     grid-row: 4 / 5;
     width: 230px;
     margin-top: 30px;
+    transform: none;
   }
 }
 
 .contacts__content-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 824px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 75px 60px 150px 130px;
+    grid-template-rows: 75px 60px 172px 150px;
+    min-height: 100%;
+    position: static;
   }
 }
 

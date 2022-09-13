@@ -41,9 +41,16 @@
   border-top: 1px solid $gray;
 
   @media (min-width: $tablet-width) {
-    grid-column: 2 / 3;
     width: 268px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}
+
+.products__link-buy svg {
+  opacity: 20%;
 }
 
 .products__link-buy {
@@ -53,17 +60,75 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  width: 100%;
   padding-top: 22.5px;
   padding-bottom: 26.5px;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
     font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 19px;
+  }
+
+  &:hover {
+    svg {
+      fill: $emerald;
+      opacity: 100%;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 30%;
+    }
   }
 }
 
 .products__image {
   @media (min-width: $tablet-width) {
     grid-row: 1 / -1;
+  }
+}
+
+.products__link-wrapper {
+  &:hover {
+    h2 {
+      opacity: 60%;
+    }
+  }
+
+  &:active {
+    h2 {
+      opacity: 30%;
+    }
+  }
+}
+
+.products__item-wrapper {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    height: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }

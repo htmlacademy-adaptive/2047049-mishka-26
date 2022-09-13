@@ -154,3 +154,24 @@
 .order::before {
   left: -50px;
 }
+
+.order__edging {
+  @media (min-width: $tablet-width) {
+    background: url("../img/features-edging(t).svg");
+    min-width: 145vw;
+    max-width: 180vw;
+    height: 24px;
+    position: absolute;
+    bottom: -3px;
+    left: - 50vw;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/features-edging(d).svg");
+    height: 34px;
+    position: absolute;
+    bottom: -15px;
+    min-width: 150vw;
+  }
+}
