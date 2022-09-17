@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Мишка – магазин вязаных аксессуаров и игрушек">
+  <meta name="keywords" content="Мишка, вязание, вязаные игрушки, вязаные аксессуары, предметы интерьера">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог интернет-магазина Мишка</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2047049-mishka-26/7/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/logos/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/logos/mishka-logo-tablet.svg">
+          <img src="./img/logos/mishka-logo.svg" alt="Логотип магазина Мишка.">
+        </picture>
+      </a>
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <ul class="main-navigation__list user-list--closed">
+        <li class="main-navigation__item main-navigation__item--search-item">
+          <a class="main-navigation__link main-navigation__link--search-link" href="#">
+            <svg class="search-link__icon" width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+            <span>Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="main-navigation__item main-navigation__item--cart-item">
+          <a class="main-navigation__link main-navigation__link--cart-link" href="#">
+            <svg class="cart-link__icon" width="20" height="19" viewBox="0 0 20 19" fill="currentColor">
+              <use xlink:href="img/sprite.svg#cart-icon"></use>
+            </svg>
+            <span>Корзина: пока&nbsp;пуста</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="main-navigation__list site-list--closed">
+        <li class="main-navigation__item site-list__item--catalog">
+          <a class="main-navigation__link site-list__link" href="#"><span>Каталог товаров</span></a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link site-list__link" href="knit-order-form.html"><span>Вязание на заказ</span></a>
+        </li>
+      </ul>
+      <div class="main-navigation__divider"></div>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list main-navigation__promo promo-menu">
+          <li class="promo-menu__item">
+            <a class="promo-menu__link" href="#"><span>Новые поступления</span></a>
+          </li>
+          <li class="promo-menu__item">
+            <a class="promo-menu__link" href="#"><span>Распродажа</span></a>
+          </li>
+        </ul>
+        <span class="main-navigation__delivery">Бесплатная доставка по России</span>
+      </div>
+    </nav>
+  </header>
+  <main class="page__content">
+    <section class="products">
+      <header class="inner-header catalog__header">
+        <h1 class="page__heading catalog__title">Каталог товаров</h1>
+        <div class="catalog__header-edging"></div>
+      </header>
+      <ul class="products__list">
+        <li class="products__item">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="./img/catalog/hare-desktop.jpg 1x, ./img/catalog/hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/catalog/hare-tablet.jpg 1x, ./img/catalog/hare-tablet@2x.jpg 2x">
+            <img class="products__image" src="./img/catalog/hare-mobile.jpg"
+              srcset="./img/catalog/hare-mobile@2x.jpg 2x" alt="">
+          </picture>
+          <div class="products__item-wrapper">
+            <a class="products__link" href="#">
+              <div class="products__link-wrapper">
+                <h2 class="products__heading">Зайчик-попрыгайчик</h2>
+                <p class="products__link-description">Рост 30 см, вес 200 г</p>
+              </div>
+            </a>
+            <div class="products__item-buy-wrapper">
+              <a class="products__link-buy" href="#">
+                <b>1 200 руб.</b>
+                <svg class="product__link-buy--cart-icon" width="20" height="19" viewBox="0 0 20 19"
+                  fill="currentColor">
+                  <use xlink:href="img/sprite.svg#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">В корзину.</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="products__item">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="./img/catalog/laundry-basket-desktop.jpg 1x, ./img/catalog/laundry-basket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/catalog/laundry-basket-tablet.jpg 1x, ./img/catalog/laundry-basket-tablet@2x.jpg 2x">
+            <img class="products__image" src="./img/catalog/laundry-basket-mobile.jpg"
+              srcset="./img/catalog/laundry-basket-mobile@2x.jpg 2x" alt="">
+          </picture>
+          <div class="products__item-wrapper">
+            <a class="products__link" href="#">
+              <div class="products__link-wrapper">
+                <h2 class="products__heading">Корзинка для белья</h2>
+                <p class="products__link-description">Диаметр 15 см, высота 10 см</p>
+              </div>
+            </a>
+            <div class="products__item-buy-wrapper">
+              <a class="products__link-buy" href="#">
+                <b>690 руб.</b>
+                <svg class="product__link-buy--cart-icon" width="20" height="19" viewBox="0 0 20 19"
+                  fill="currentColor">
+                  <use xlink:href="img/sprite.svg#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">В корзину.</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="products__item">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="./img/catalog/big-toy-basket-desktop.jpg 1x, ./img/catalog/big-toy-basket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/catalog/big-toy-basket-tablet.jpg 1x, ./img/catalog/big-toy-basket-tablet@2x.jpg 2x">
+            <img class="products__image" src="./img/catalog/big-toy-basket-mobile.jpg"
+              srcset="./img/catalog/big-toy-basket-mobile@2x.jpg 2x" alt="">
+          </picture>
+          <div class="products__item-wrapper">
+            <a class="products__link" href="#">
+              <div class="products__link-wrapper">
+                <h2 class="products__heading">Большая корзинка <br> для игрушек</h2>
+                <p class="products__link-description">Диаметр 30 см, высота 30 см</p>
+              </div>
+            </a>
+            <div class="products__item-buy-wrapper">
+              <a class="products__link-buy" href="#">
+                <b>1 500 руб.</b>
+                <svg class="product__link-buy--cart-icon" width="20" height="19" viewBox="0 0 20 19"
+                  fill="currentColor">
+                  <use xlink:href="img/sprite.svg#cart-icon"></use>
+                </svg>
+                <span class="visually-hidden">В корзину.</span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="production">
+      <header class="production__header">
+        <svg width="32" height="22" viewBox="0 0 32 22" fill="none">
+          <use xlink:href="img/sprite.svg#camera-icon"></use>
+        </svg>
+        <h3 class="heading production__title">Процесс <br> производства</h3>
+      </header>
+      <div class="production__video-wrapper">
+        <video poster="./img/catalog/video-poster.jpg">
+          <source url="#">
+        </video>
+        <button class="playback-button">
+          <svg width="101" height="77" viewBox="0 0 101 77" fill="none">
+            <use xlink:href="img/sprite.svg#play-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="production__descpition">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары.</p>
+      <div class="production__button-positioner">
+        <button class="button button--make-order" type="button">
+          Сделать заказ
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer footer">
+    <a class="footer__logo" href="index.html">
+      <svg width="102" height="34" viewBox="0 0 102 34" fill="black">
+        <use xlink:href="img/sprite.svg#footer-logo"></use>
+      </svg>
+    </a>
+    <h3 class="visually-hidden">Мы в социальных сетях.</h3>
+    <ul class="footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="https://vk.com/htmlacademy">
+          <svg width="28" height="23" viewBox="0 0 28 23" fill="#231F20">
+            <use xlink:href="img/sprite.svg#vk-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <svg width="28" height="23" viewBox="0 0 28 23" fill="#231F20">
+            <use xlink:href="img/sprite.svg#youtube-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://t.me/htmlacademy">
+          <svg width="28" height="23" viewBox="0 0 28 23" fill="#231F20">
+            <use xlink:href="img/sprite.svg#telegram-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <section class="developed__footer developed">
+      <h3 class="heading developed-title">Разработано</h3>
+      <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="#63D1BB">
+          <use xlink:href="img/sprite.svg#developed-icon"></use>
+        </svg>
+      </a>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
