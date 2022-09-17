@@ -50,17 +50,3 @@
     border-left: 1px solid rgba($color: $black-strong, $alpha: 0.1);
   }
 }
-
-.main-navigation__link--cart-link:hover svg,
-.main-navigation__link--search-link:hover svg {
-  path {
-    opacity: 1;
-  }
-}
-
-.main-navigation__link--cart-link:active svg,
-.main-navigation__link--search-link:active svg {
-  path {
-    opacity: 0.3;
-  }
-}

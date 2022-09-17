@@ -92,6 +92,10 @@
     }
   }
 
+  svg {
+    opacity: 0.2;
+  }
+
   &:hover {
     span {
       opacity: 0.6;
@@ -99,6 +103,7 @@
 
     svg {
       fill: $emerald;
+      opacity: 1;
     }
   }
 
@@ -109,6 +114,7 @@
 
     svg {
       fill: $emerald;
+      opacity: 0.3;
     }
   }
 }
@@ -142,7 +148,6 @@
     flex-wrap: wrap;
     order: 4;
     justify-content: flex-end;
-    // border-top: 1px solid rgba($color: $black-strong, $alpha: 0.1);
     background-color: transparent;
     z-index: 1;
   }
