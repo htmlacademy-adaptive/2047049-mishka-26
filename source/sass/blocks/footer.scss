@@ -7,9 +7,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
+    padding-top: 32px;
   }
 }
 
@@ -40,6 +41,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    padding-left: 50px;
+    padding-right: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 282px;
   }
 
   svg {
@@ -54,5 +61,19 @@
 }
 
 .footer__social {
-  padding: 12px 30px;
+  padding: 8px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 311px;
+  }
+}
+
+.developed__footer {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 1px;
+  }
 }

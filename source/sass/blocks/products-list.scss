@@ -15,7 +15,7 @@
 
 .products__item {
   border: 1px solid $gray;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   display: flex;
   flex-direction: column;
 
@@ -32,10 +32,23 @@
   picture {
     grid-row: 1 / 3;
   }
+
+  &:first-child {
+    margin-bottom: 53px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 51px;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 52px;
+  }
 }
 
 .products__item:not(:nth-child(3n)) {
   @media (min-width: $desktop-width) {
     margin-right: 48px;
+    margin-bottom: 55px;
   }
 }

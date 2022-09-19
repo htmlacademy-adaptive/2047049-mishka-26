@@ -29,6 +29,12 @@
   }
 }
 
+.button--form {
+  font-size: 17px;
+  line-height: 16px;
+  padding: 16px 0;
+}
+
 .button--make-order {
   width: 100%;
 
@@ -49,7 +55,7 @@
 
 .button--slider {
   border: 1px solid $gray;
-  padding: 13px 42px 13px;
+  padding: 12px 38px;
 
   @media (min-width: $tablet-width) {
     width: inherit;

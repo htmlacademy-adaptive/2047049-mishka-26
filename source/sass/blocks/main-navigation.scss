@@ -15,16 +15,17 @@
 .main-header__logo {
   height: 80px;
   align-self: center;
-  padding: 26px 40px;
+  padding: 22px 40px;
 
   @media (min-width: $tablet-width) {
     width: 370px;
-    padding: 18px 40px;
+    padding: 18px 47px;
   }
 
   @media (min-width: $desktop-width) {
     order: 2;
-    padding: 10px 110px;
+    padding: 5px 40px;
+    width: 230px;
   }
 
   &:hover {
@@ -43,8 +44,8 @@
   height: 40px;
   border: none;
   cursor: pointer;
-  right: 11%;
-  top: 30%;
+  right: 7%;
+  top: 24%;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -73,6 +74,14 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 33px 20px;
+  }
 }
 
 .main-navigation__link {
@@ -92,6 +101,10 @@
     }
   }
 
+  svg {
+    opacity: 0.2;
+  }
+
   &:hover {
     span {
       opacity: 0.6;
@@ -99,6 +112,7 @@
 
     svg {
       fill: $emerald;
+      opacity: 1;
     }
   }
 
@@ -109,6 +123,7 @@
 
     svg {
       fill: $emerald;
+      opacity: 0.3;
     }
   }
 }
@@ -125,7 +140,7 @@
     display: block;
     align-self: center;
     text-align: right;
-    width: 398px;
+    width: 359px;
     padding-right: 20px;
     background-color: transparent;
     z-index: 1;
@@ -133,6 +148,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding: 17px 51px;
   }
 }
 
@@ -142,7 +158,6 @@
     flex-wrap: wrap;
     order: 4;
     justify-content: flex-end;
-    // border-top: 1px solid rgba($color: $black-strong, $alpha: 0.1);
     background-color: transparent;
     z-index: 1;
   }

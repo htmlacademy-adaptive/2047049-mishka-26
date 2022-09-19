@@ -1,6 +1,5 @@
 .promo-menu {
   display: none;
-  height: 40px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -15,8 +14,12 @@
 }
 
 .promo-menu__item {
-  padding: 12px 0;
-  padding-right: 30px;
+  padding: 16px 27px;
+  padding-right: 13px;
+}
+
+.promo-menu__item:nth-child(2n) {
+  padding: 16px 0;
 }
 
 .promo-menu__link {

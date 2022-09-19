@@ -32,5 +32,15 @@
   width: 100%;
   background-color: $gray-light;
   text-align: center;
-  padding: 100px 35px;
+  padding: 73px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 103px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 82px;
+  }
 }
