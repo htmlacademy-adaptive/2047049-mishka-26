@@ -1,8 +1,14 @@
 .order-form {
   padding: 0 30px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 32px;
   }
 }
 
@@ -15,11 +21,20 @@
   @media (max-width: $mobile-width-only) {
     width: 260px;
     margin: 0 auto;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    margin: 0;
+    padding-top: 58px;
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 112px 175px;
+    padding-bottom: 62px;
   }
 }
 
@@ -69,7 +84,7 @@
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-    text-align: center;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
@@ -97,6 +112,11 @@
 }
 
 .odrer-form__wrapper {
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
@@ -122,13 +142,14 @@
 
 .order {
   position: relative;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -80px;
+    margin-top: -69px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -40px;
+    margin-top: -59px;
   }
 }
 

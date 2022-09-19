@@ -168,9 +168,11 @@
         <h3 class="heading production__title">Процесс <br> производства</h3>
       </header>
       <div class="production__video-wrapper">
-        <video poster="./img/catalog/video-poster.jpg">
-          <source url="#">
-        </video>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/video-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg">
+          <img class="production__image" src="./img/video-mobile.jpg" alt="Видео">
+        </picture>
         <button class="playback-button">
           <svg width="101" height="77" viewBox="0 0 101 77" fill="none">
             <use xlink:href="img/sprite.svg#play-icon"></use>

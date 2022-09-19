@@ -11,21 +11,29 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 200px 450px;
+    grid-template-columns: 167px 500px;
     padding: 50px 0;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 200px 700px;
+    grid-template-columns: 175px 700px;
+    padding-bottom: 50px;
   }
 }
 
 .legend__additional {
-  margin-bottom: 4.5px;
+  margin-bottom: 22.5px;
+  margin-left: -3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     grid-column: 1 / 2;
+    padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 57px;
   }
 }
 
@@ -38,11 +46,11 @@
 .legend__additional::after {
   content: "";
   height: 1px;
-  width: 450%;
+  width: 463%;
   position: absolute;
   top: 50%;
   left: 145%;
-  background-color: $emerald;
+  background-color: #63d1bb;
   z-index: 1;
 
   @media (min-width: $tablet-width) {

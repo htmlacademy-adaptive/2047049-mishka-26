@@ -6,20 +6,25 @@
   @media (max-width: $mobile-width-only) {
     width: 260px;
     margin: 0 auto;
-    margin-bottom: 31px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 200px 500px;
-    margin-bottom: 100px;
+    grid-template-columns: 173px 350px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 180px 350px;
   }
 }
 
 .fieldset__type-label {
   display: flex;
   align-items: center;
-  gap: 19px;
+  margin-left: -6px;
+  gap: 14px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
@@ -27,6 +32,12 @@
 
     br {
       display: none;
+    }
+  }
+
+  svg {
+    @media (max-width: $mobile-width-only) {
+      padding: 5px;
     }
   }
 
@@ -44,26 +55,37 @@
 }
 
 .fieldset__type-label:not(:last-child) {
-  margin-bottom: 11px;
+  margin-bottom: 1px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    margin-top: -36px;
+  }
 }
 
 .legend__type {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  margin-left: -3px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    margin-bottom: -16px;
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 57px;
   }
 }
 
 .legend__type::after {
   content: "";
   height: 1px;
-  width: 470%;
+  width: 493%;
   position: absolute;
   top: 50%;
-  left: 175%;
-  background-color: $emerald;
+  left: 156%;
+  background-color: #63d1bb;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
@@ -77,7 +99,7 @@
   }
 }
 
-.form-input--radio:checked + .radio-icon {
+.form-input--radio:checked+.radio-icon {
   path:last-child {
     display: block;
   }
