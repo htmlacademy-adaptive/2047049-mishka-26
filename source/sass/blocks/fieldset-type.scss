@@ -97,7 +97,7 @@
   }
 }
 
-.form-input--radio:checked+.radio-icon {
+.form-input--radio:checked + .radio-icon {
   path:last-child {
     display: block;
   }

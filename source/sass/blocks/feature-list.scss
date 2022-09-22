@@ -53,6 +53,8 @@
   }
 
   svg {
+    fill: #149080;
+    opacity: 0.5;
 
     @media (min-width: $tablet-width) {
       margin-top: 6px;
@@ -87,9 +89,4 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
-
-.features__link svg {
-  fill: #149080;
-  opacity: 0.5;
 }
