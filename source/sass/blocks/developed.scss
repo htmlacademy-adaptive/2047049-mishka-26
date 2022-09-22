@@ -28,3 +28,10 @@
     }
   }
 }
+
+
+.developed__footer {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 1px;
+  }
+}

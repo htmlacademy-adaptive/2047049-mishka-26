@@ -1,4 +1,4 @@
-.fieldset__additional {
+.fieldset-additional {
   padding: 0;
   margin: 0;
 
@@ -22,7 +22,7 @@
   }
 }
 
-.legend__additional {
+.legend-additional {
   margin-bottom: 22.5px;
   margin-left: -3px;
 
@@ -37,13 +37,13 @@
   }
 }
 
-.fieldset__additional-label {
+.fieldset-additional-label {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
   }
 }
 
-.legend__additional::after {
+.legend-additional::after {
   content: "";
   height: 1px;
   width: 463%;

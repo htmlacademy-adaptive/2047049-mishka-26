@@ -1,4 +1,4 @@
-.fieldset__color {
+.fieldset-color {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -25,8 +25,8 @@
   }
 }
 
-.fieldset__color::after,
-.fieldset__color::before {
+.fieldset-color::after,
+.fieldset-color::before {
   @media (min-width: $tablet-width) {
     content: "";
     height: 100%;
@@ -37,18 +37,18 @@
   }
 }
 
-.fieldset__color::after {
+.fieldset-color::after {
   @media (min-width: $tablet-width) {
     right: -20px;
     top: 0;
   }
 }
 
-.fieldset__color::before {
+.fieldset-color::before {
   left: -50px;
 }
 
-.fieldset__color-label {
+.fieldset-color-label {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -86,7 +86,7 @@
   }
 }
 
-.fieldset__color-label:nth-child(even) {
+.fieldset-color-label:nth-child(even) {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
   }
@@ -96,7 +96,7 @@
   }
 }
 
-.fieldset__color-label:nth-child(odd) {
+.fieldset-color-label:nth-child(odd) {
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
   }
@@ -106,25 +106,25 @@
   }
 }
 
-.fieldset__color-label:nth-child(3n+1) {
+.fieldset-color-label:nth-child(3n+1) {
   @media (min-width: $desktop-width) {
     grid-column: 4 / 5;
   }
 }
 
-.fieldset__color-label:nth-child(3n+2) {
+.fieldset-color-label:nth-child(3n+2) {
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
   }
 }
 
-.fieldset__color-label:nth-child(3n+3) {
+.fieldset-color-label:nth-child(3n+3) {
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
   }
 }
 
-.fieldset__color-label:not(:last-child) {
+.fieldset-color-label:not(:last-child) {
   margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
@@ -132,7 +132,7 @@
   }
 }
 
-.legend__color {
+.legend-color {
   margin-bottom: 18px;
   margin-left: -3px;
 
@@ -147,7 +147,7 @@
   }
 }
 
-.legend__color::after {
+.legend-color::after {
   content: "";
   height: 1px;
   width: 415%;
@@ -168,7 +168,7 @@
   }
 }
 
-.form-input--checkbox:checked+.checkbox-icon {
+.form-input--checkbox:checked + .checkbox-icon {
   path {
     display: block;
   }
