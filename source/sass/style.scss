@@ -8,7 +8,7 @@
 
 // index.html
 @import "./blocks/page.scss";
-@import "./blocks/header.scss";
+@import "./blocks/main-header.scss";
 @import "./blocks/main-navigation.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/user-list.scss";
@@ -19,15 +19,15 @@
 @import "./blocks/advantages.scss";
 @import "./blocks/feedback.scss";
 @import "./blocks/contacts.scss";
-@import "./blocks/map.scss";
+@import "./blocks/contacts-map.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/developed.scss";
 
 // catalog.html
-@import "./blocks/catalog-header.scss";
+@import "./blocks/products-header.scss";
 @import "./blocks/products-list.scss";
-@import "./blocks/product-card.scss";
+@import "./blocks/products-item.scss";
 @import "./blocks/production.scss";
 @import "./blocks/playback-button.scss";
 

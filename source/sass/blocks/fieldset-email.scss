@@ -1,4 +1,4 @@
-.fieldset__email {
+.fieldset-email {
   padding: 0;
   position: relative;
 
@@ -22,8 +22,8 @@
   }
 }
 
-.fieldset__email::after,
-.fieldset__email::before {
+.fieldset-email::after,
+.fieldset-email::before {
   @media (min-width: $tablet-width) {
     content: "";
     height: 100%;
@@ -34,18 +34,18 @@
   }
 }
 
-.fieldset__email::after {
+.fieldset-email::after {
   @media (min-width: $tablet-width) {
     right: -50px;
     top: 0;
   }
 }
 
-.fieldset__email::before {
+.fieldset-email::before {
   left: -50px;
 }
 
-.legend__email {
+.legend-email {
   margin-bottom: 4.5px;
   margin-left: -3px;
 
@@ -60,14 +60,14 @@
   }
 }
 
-.fieldset__email-label {
+.fieldset-email-label {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
   }
 
 }
 
-.legend__email::after {
+.legend-email::after {
   content: "";
   height: 1px;
   width: 295%;
