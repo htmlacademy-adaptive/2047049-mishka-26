@@ -67,7 +67,7 @@
   }
 }
 
-.contact__table-body {
+.contacts__table-body {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -89,7 +89,7 @@
   padding-bottom: 28px;
 }
 
-.contacts__table-digit--email {
+.contacts__table-digit-email {
   color: $black-light;
   font-weight: 400;
   font-size: 14px;

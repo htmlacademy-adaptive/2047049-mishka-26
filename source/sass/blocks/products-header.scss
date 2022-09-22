@@ -1,4 +1,4 @@
-.catalog__header {
+.products__header {
   margin-bottom: 30px;
   position: relative;
 
@@ -15,8 +15,8 @@
   }
 }
 
-.catalog__header::after,
-.catalog__header::before {
+.products__header::after,
+.products__header::before {
   @media (min-width: $tablet-width) {
     content: "";
     height: 100%;
@@ -27,19 +27,19 @@
   }
 }
 
-.catalog__header::after {
+.products__header::after {
   @media (min-width: $tablet-width) {
     right: -50px;
     top: 0;
   }
 }
 
-.catalog__header::before {
+.products__header::before {
   left: -50px;
   top: 0;
 }
 
-.catalog__header-edging {
+.products__header-edging {
   @media (min-width: $tablet-width) {
     background: url("../img/features-edging(t).svg");
     min-width: 145vw;

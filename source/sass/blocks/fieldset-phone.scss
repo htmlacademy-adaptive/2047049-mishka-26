@@ -1,4 +1,4 @@
-.fieldset__phone {
+.fieldset-phone {
   padding: 0;
   position: relative;
 
@@ -22,8 +22,8 @@
   }
 }
 
-.fieldset__phone::after,
-.fieldset__phone::before {
+.fieldset-phone::after,
+.fieldset-phone::before {
   @media (min-width: $tablet-width) {
     content: "";
     height: 100%;
@@ -34,18 +34,18 @@
   }
 }
 
-.fieldset__phone::after {
+.fieldset-phone::after {
   @media (min-width: $tablet-width) {
     right: -50px;
     top: 0;
   }
 }
 
-.fieldset__phone::before {
+.fieldset-phone::before {
   left: -50px;
 }
 
-.legend__phone {
+.legend-phone {
   margin-bottom: 4.5px;
   margin-left: -3px;
 
@@ -60,13 +60,13 @@
   }
 }
 
-.fieldset__phone-label {
+.fieldset-phone-label {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
   }
 }
 
-.legend__phone::after {
+.legend-phone::after {
   content: "";
   height: 1px;
   width: 555%;

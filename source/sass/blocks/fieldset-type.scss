@@ -1,4 +1,4 @@
-.fieldset__type {
+.fieldset-type {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   }
 }
 
-.fieldset__type-label {
+.fieldset-type-label {
   display: flex;
   align-items: center;
   margin-left: -6px;
@@ -53,7 +53,7 @@
   }
 }
 
-.fieldset__type-label:not(:last-child) {
+.fieldset-type-label:not(:last-child) {
   margin-bottom: 1px;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +61,7 @@
   }
 }
 
-.legend__type {
+.legend-type {
   margin-bottom: 25px;
   margin-left: -3px;
 
@@ -76,7 +76,7 @@
   }
 }
 
-.legend__type::after {
+.legend-type::after {
   content: "";
   height: 1px;
   width: 493%;
@@ -97,13 +97,13 @@
   }
 }
 
-.form-input--radio:checked+.radio-icon {
+.form-input--radio:checked + .radio-icon {
   path:last-child {
     display: block;
   }
 }
 
-.fieldset__type-wrapper {
+.fieldset-type-wrapper {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     margin-top: -36px;
